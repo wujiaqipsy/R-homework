@@ -19,8 +19,7 @@ https://osf.io/4k56b/?view_only=6575952710034f5b867f83aebdca9112
 |----PPT_Re_Lee_2023_group3_2024.pptx
 |----Data_Analysis_Scripts_Re_Maister_2021_G3_2023.rmd
 |----Papaja_Scripts_Re_Lee_2023_group3_2024.rmd
-|----Papaja_pdf_Re_Lee_2023_group3_2024.pdf
-|----Papaja_Scripts_Re_Lee_2023_group3_2024.tex
+|----Papaja_PDF_Re_Lee_2023_group3_2024.pdf
 |----references.bib
 |----Data
 |     |-----SE data.csv
