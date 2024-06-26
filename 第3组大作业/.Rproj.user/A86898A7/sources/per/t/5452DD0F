@@ -1,9 +1,9 @@
 {
     "id": "5452DD0F",
-    "path": "D:/1_Postgraduate/Class/1-2/R/duplicate_work/Papaja_Scripts_Re_Lee_2023_group3_2024.rmd",
+    "path": "D:/1_Postgraduate/Class/1-2/R/R-homework/第3组大作业/Papaja_Scripts_Re_Lee_2023_group3_2024.rmd",
     "project_path": "Papaja_Scripts_Re_Lee_2023_group3_2024.rmd",
     "type": "r_markdown",
-    "hash": "723681733",
+    "hash": "2498909287",
     "contents": "",
     "dirty": false,
     "created": 1718460299138.0,
@@ -13,8 +13,8 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "151,261",
-        "scrollLine": "150",
+        "cursorPosition": "181,54",
+        "scrollLine": "169",
         "rmdVisualMode": "false",
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1",
@@ -23,11 +23,11 @@
         "docOutlineSize": "121"
     },
     "folds": "",
-    "lastKnownWriteTime": 1719336358,
+    "lastKnownWriteTime": 1719365736,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1719336358217,
+    "last_content_update": 1719365736220,
     "read_only": false,
     "read_only_alternatives": []
 }

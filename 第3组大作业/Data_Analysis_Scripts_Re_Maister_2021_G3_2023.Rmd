@@ -23,55 +23,55 @@ pacman::p_load(dplyr, tidyr, languageR, lme4, emmeans, sjPlot, ggplot2, forcats,
 
 # 将工作目录设置为文件所在位置
 ###################需要您进行的更改：将工作目录设置为文件所在位置#######################
-setwd("D:/1_Postgraduate/Class/1-2/R/duplicate_work")
+setwd("D:/1_Postgraduate/Class/1-2/R/R-homework/第3组大作业")
 ```
 
 ```{r, global_options, include=FALSE}
-#用knitr包中的opt_chunk用于设置代码块的输出格式、文档格式、代码高亮等；message设置为False禁止在文档编译时显示来自R代码块的消息，可使最终生成的文档更加干净、整洁。
-knitr::opts_chunk$set(message=FALSE)
-
-
-#安装后续会使用到的包
-#languageR包提供许多数据集和函数，用于处理和分析语言学数据。
-install.packages("languageR") #lme4包提供广义线性混合模型。
-install.packages("lme4") #emmeans包计算和比较模型的边际均值。
-install.packages("emmeans")
-#sjPlot包提供用于生成图形（森林图、边际效应图等）和可视化统计模型（线性回归、广义线性模型、混合效应模型等）结果的函数。
-install.packages("sjPlot")
-#DHARMa包提供了用于检查统计模型（尤其是线性和广义线性模型）的诊断图和统计测试的函数。它有助于评估模型拟合情况、残差的分布和模型假设的满足程度。
-install.packages("DHARMa")
-#brms包用于在贝叶斯框架下拟合广义线性混合模型和其他复杂的回归模型。
-install.packages("brms")
-#papaja包专门用于撰写符合APA格式要求的学术论文和报告。
-install.packages("papaja")
-#cowplot包增强ggplot2图形的可视化效果，可以方便地组合和排列多个图形，并进行自定义调整，使图形更美观、专业。
-install.packages("cowplot") #ggpubr包简化和增强ggplot2图形的创建和定制。
-install.packages("ggpubr")
+# #用knitr包中的opt_chunk用于设置代码块的输出格式、文档格式、代码高亮等；message设置为False禁止在文档编译时显示来自R代码块的消息，可使最终生成的文档更加干净、整洁。
+# knitr::opts_chunk$set(message=FALSE)
+# 
+# 
+# #安装后续会使用到的包
+# #languageR包提供许多数据集和函数，用于处理和分析语言学数据。
+# install.packages("languageR") #lme4包提供广义线性混合模型。
+# install.packages("lme4") #emmeans包计算和比较模型的边际均值。
+# install.packages("emmeans")
+# #sjPlot包提供用于生成图形（森林图、边际效应图等）和可视化统计模型（线性回归、广义线性模型、混合效应模型等）结果的函数。
+# install.packages("sjPlot")
+# #DHARMa包提供了用于检查统计模型（尤其是线性和广义线性模型）的诊断图和统计测试的函数。它有助于评估模型拟合情况、残差的分布和模型假设的满足程度。
+# install.packages("DHARMa")
+# #brms包用于在贝叶斯框架下拟合广义线性混合模型和其他复杂的回归模型。
+# install.packages("brms")
+# #papaja包专门用于撰写符合APA格式要求的学术论文和报告。
+# install.packages("papaja")
+# #cowplot包增强ggplot2图形的可视化效果，可以方便地组合和排列多个图形，并进行自定义调整，使图形更美观、专业。
+# install.packages("cowplot") #ggpubr包简化和增强ggplot2图形的创建和定制。
+# install.packages("ggpubr")
 
 ```
 
 ```{r load_packages, echo=FALSE, message=FALSE,warning=FALSE}
-#加载必要的包
-library(dplyr) #数据清洗、转换和操作
-library(tidyr)#数据清洗
-library(languageR) #清洗数据
-library(lme4) # glmer
-library(emmeans) #事后比较
-library(sjPlot) #创建模型结果的图形和表格
-library(ggplot2) #绘图
-library(forcats) #重新排列因子水平
-library(DHARMa) #验证GLMM有效性
-library(brms) #贝叶斯广义线性混合效应模型
-library(stringr)#处理字符串
-library(ggeffects) #生成预测效果图
-library(papaja) #APA格式
-library(cowplot) #组合图形
-library(ggpubr) #组合图形
-library(patchwork) #组合图形
-
-# 将工作目录设置为文件所在位置
-#*更改为文件位置
-setwd("D:/1_Postgraduate/Class/1-2/R/duplicate_work")
+# #加载必要的包
+# library(dplyr) #数据清洗、转换和操作
+# library(tidyr)#数据清洗
+# library(languageR) #清洗数据
+# library(lme4) # glmer
+# library(emmeans) #事后比较
+# library(sjPlot) #创建模型结果的图形和表格
+# library(ggplot2) #绘图
+# library(forcats) #重新排列因子水平
+# library(DHARMa) #验证GLMM有效性
+# library(brms) #贝叶斯广义线性混合效应模型
+# library(stringr)#处理字符串
+# library(ggeffects) #生成预测效果图
+# library(papaja) #APA格式
+# library(cowplot) #组合图形
+# library(ggpubr) #组合图形
+# library(patchwork) #组合图形
+# 
+# # 将工作目录设置为文件所在位置
+# #*更改为文件位置
+# setwd("D:/1_Postgraduate/Class/1-2/R/duplicate_work")
 ```
 
 
